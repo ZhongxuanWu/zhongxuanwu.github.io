@@ -5,12 +5,24 @@ preprints:
     conference: bioRxiv, 2025
     paper: https://doi.org/10.1101/2025.10.14.682470
     code:
-    bibtex: https://doi.org/10.1101/2025.10.14.682470
+    bibtex:
     image: ./assets/img/replay.png
     notes:
-    others: A short version is presented at Conference on Cognitive Computational Neuroscience (CCN), 2024.
+    others: A <a href="https://2024.ccneuro.org/pdf/378_Paper_authored_paper_authored.pdf"><autocolor>short version</autocolor></a> was presented at Conference on Cognitive Computational Neuroscience (CCN), 2024.
+
 
 papers:
+  - title: "From Route-Level Driving Familiarity to Scenario- and Individual-Level Diversity: A Preliminary Human Gaze Study in Simulated Driving."
+    authors: Haoji Liu, Yiming Yan, Nathaniel Powell, Yu Chul Lee, <strong>Zhongxuan Wu</strong>, Xue-Xin Wei, Mary Hayhoe, Junmin Wang
+    conference_short:
+    conference: The IEEE International Conference on Vehicular Electronics and Safety, 2025
+    paper: https://drive.google.com/file/d/1tC59AgwXJz9ZTqva-Hj0qJgt09Z8KKN3/view?usp=sharing
+    code:
+    page:
+    bibtex:
+    notes:
+    image: ./assets/img/icves2025.png
+
   - title: Rapid context inference in a thalamocortical model using recurrent neural networks
     authors: Wei-Long Zheng, <strong>Zhongxuan Wu</strong>, Ali Hummos, Guangyu Robert Yang, Michael M Halassa
     conference_short:
