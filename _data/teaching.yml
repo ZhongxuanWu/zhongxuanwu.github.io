@@ -1,0 +1,9 @@
+teachingassistant:
+  - title: NEURO 337 Neural Computation (Spring 2025)
+    image: ./assets/img/neu337.png
+    description: Teaching assistant with <a href="https://sites.google.com/view/xxweineuraltheory/research"><autocolor>Prof. Xue-Xin Wei</autocolor></a>. Upper-division course in theoretical and computational neuroscience. I prepared complete homework and exam solution sets, delivered four review lectures, and led several Q&A sessions.
+
+
+  - title: NEURO 365L Neurobiology Lab (Fall 2023)
+    image: ./assets/img/neu365l.png
+    description: Teaching assistant with <a href="https://golding9.wixsite.com/website"><autocolor>Prof. Nace Golding</autocolor></a>. Upper-division lab course on electrophysiology. I prepared session solutions, performed pre-lab equipment troubleshooting, helped students through patch-clamp recordings and pharmacological manipulations, and organized post-lab Q&A sessions.
