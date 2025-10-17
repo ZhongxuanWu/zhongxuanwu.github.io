@@ -1,13 +1,14 @@
 # Basic Information 
 title: Zhongxuan Wu
 position: Ph.D. Student
-affiliation: Department of Neuroscience, UT Austin
-email: zhongxuanwu (at) utexas.edu
+department: Department of Neuroscience
+school: The University of Texas at Austin
+email: zhongxuanwu [at] utexas [dot] edu
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: Computational Neuroscience, Psychology, Cognitive Sciences, Machine Learning
-description: This is Zhongxuan Wu's personal website.
+description: Zhongxuan Wu's personal website.
 canonical: https://zhongxuanwu.github.io/
 
 # Links 
@@ -20,7 +21,7 @@ linkedin: https://www.linkedin.com/in/zhongxuan-wu-503458205/
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
+avatar: ./assets/img/profile.png
 favicon: ./assets/img/campfire.png
 favicon_dark: ./assets/img/campfire.png
 
@@ -30,7 +31,7 @@ enable_footnote: true
 
 # Auto Dark Mode
 # You may use the option to disable the automatic dark theme
-auto_dark_mode: true
+auto_dark_mode: false
 
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.
@@ -55,3 +56,4 @@ exclude:
   - LICENSE
   - minimal-light.gemspec
   - html_source_file/
+  - note.txt

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <title>{{ site.title }} | {{site.affiliation}}</title>
+    <title>{{ site.title }}</title>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,15 +46,19 @@
         <h1>{{ site.title }}</h1>
 
         {% if site.position %}
-        <position style="font-size:1.10rem;">{{ site.position }}</position>
+        <a><autocolor>{{ site.position }}</autocolor></a>
         <br>
         {% endif %}
-        {% if site.affiliation %}
-        <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
+        {% if site.department %}
+        <a href="{{ site.department_link }}" rel="noopener"><autocolor>{{ site.department }}</autocolor></a>
+        <br>
+        {% endif %}
+        {% if site.school %}
+        <a><autocolor>{{ site.school }}</autocolor></a>
         <br>
         {% endif %}
         {% if site.email %}
-        <email>{{ site.email }}</email>
+        <a><autocolor>{{ site.email }}</autocolor></a>
         {% endif %}
 
         <br>
@@ -100,7 +104,7 @@
       <br>
 
       {% if site.enable_footnote %}
-      <p><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
+      <p><small>© Zhongxuan Wu 2025. Design by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener"><autocolor>Minimal Light</autocolor></a>.</small></p>
       {% endif %}
 
       </section>
