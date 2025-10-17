@@ -1,5 +1,16 @@
 <h1 id="about" style="margin: 0px 0px 20px;">About</h1>
 
-<p>I am a Ph.D. student in the Department of Computer Science at University of Texas at Austin, advised by Prof. Qixing Huang. I received my Bachelor degree with honors in 2019 from Department of Electrical Engineering, Tsinghua University. During my undergraduate studies, I was advised by Prof. Yebin Liu.</p>
+<p style="margin: 0px 10px 10px;">I'm a Ph.D. student in the Department of Neuroscience at The University of Texas at Austin, working with Dr. <a href="https://sites.google.com/view/xxweineuraltheory/research"><autocolor>Xue-Xin Wei</autocolor></a>. Before that, I received my B.S. in Biology from Peking University in 2022, where I was advised by Dr. <a href="https://web.bio.pku.edu.cn/UHPB/index.php?m=Index&a=teacher_cont&id=36&cid=21"><autocolor>Louis Tao</autocolor></a>. During my undergraduate study, I completed a research internship at MIT with Drs. <a href="https://weilongzheng.github.io/"><autocolor>Wei-Long Zheng</autocolor></a>, <a href="https://scholar.google.com/citations?user=hrI8aH8AAAAJ&hl=en&oi=sra"><autocolor>Guangyu Robert Yang</autocolor></a>, and <a href="https://halassalab.tufts.edu/"><autocolor>Michael Halassa</autocolor></a>.</p>
 
-<p>My research focuses on 3D vision, computer graphics and machine learning.</p>
+<p style="margin: 0px 10px 10px;">My research focuses on studying the geometry and dynamics of neural representations by developing and applying state-space models, generative models and manifold learning techniques.</p>
+
+
+
+
+
+
+
+
+
+
+

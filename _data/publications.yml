@@ -1,32 +1,23 @@
-papers:
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
-
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
-
 preprints:
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+  - title: Drift-diffusion dynamics of the hippocampal replay
+    authors: <strong>Zhongxuan Wu</strong>, Xue-Xin Wei
+    conference_short:
+    conference: bioRxiv, 2025
+    paper: https://doi.org/10.1101/2025.10.14.682470
+    code:
+    bibtex: https://doi.org/10.1101/2025.10.14.682470
+    image: ./assets/img/replay.png
+    notes:
+    others: A short version is presented at Conference on Cognitive Computational Neuroscience (CCN), 2024.
+
+papers:
+  - title: Rapid context inference in a thalamocortical model using recurrent neural networks
+    authors: Wei-Long Zheng, <strong>Zhongxuan Wu</strong>, Ali Hummos, Guangyu Robert Yang, Michael M Halassa
+    conference_short:
+    conference: Nature Communications, 2024
+    paper: https://www.nature.com/articles/s41467-024-52289-3
+    code: https://github.com/weilongzheng/PFC_MD_Modeling/
+    page:
+    bibtex: https://scholar.googleusercontent.com/scholar.bib?q=info:7jsKejyuIqsJ:scholar.google.com/&output=citation&scisdr=CgJmZ6odELrBh0Dlt4I:AAZF9b8AAAAAaPHjr4IHXTufdKSXztF_4ooQnug&scisig=AAZF9b8AAAAAaPHjr0M23oPVaOZkmMMdYYiUHJM&scisf=4&ct=citation&cd=-1&hl=en
+    notes:
+    image: ./assets/img/pfcmd.png
