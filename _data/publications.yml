@@ -24,7 +24,7 @@ papers:
     image: ./assets/img/icves2025.png
 
   - title: Rapid context inference in a thalamocortical model using recurrent neural networks
-    authors: Wei-Long Zheng, <strong>Zhongxuan Wu</strong>, Ali Hummos, Guangyu Robert Yang, Michael M Halassa
+    authors: Wei-Long Zheng, <strong>Zhongxuan Wu</strong>, Ali Hummos, Guangyu Robert Yang, Michael M. Halassa
     conference_short:
     conference: Nature Communications, 2024
     paper: https://www.nature.com/articles/s41467-024-52289-3
