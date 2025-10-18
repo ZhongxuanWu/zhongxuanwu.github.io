@@ -1,4 +1,4 @@
-<h1 id="teaching" style="margin: 20px 0 -10px;">Teaching</h1>
+<h2 id="teaching" style="margin: 20px 0 -10px;">Teaching</h2>
 
 <div class="publications">
 <ol class="bibliography">

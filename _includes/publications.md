@@ -1,4 +1,4 @@
-<h1 id="preprints" style="margin: 50px 0 -10px;">Preprints</h1>
+<h2 id="preprints" style="margin: 50px 0 -10px;">Preprints</h2>
 
 <div class="publications">
 <ol class="bibliography">
@@ -51,7 +51,7 @@
 </div>
 
 
-<h1 id="publications" style="margin: 0px 0px -10px;">Publications</h1>
+<h2 id="publications" style="margin: 0px 0px -10px;">Publications</h2>
 
 <div class="publications">
 <ol class="bibliography">
