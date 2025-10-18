@@ -31,6 +31,8 @@ enable_footnote: true
 
 # Auto Dark Mode
 # You may use the option to disable the automatic dark theme
+# _sass/minimal-light.scss: auto, based on system
+# _sass/minimal-light-no-dark-mode.scss: light-only
 auto_dark_mode: false
 
 # Font
