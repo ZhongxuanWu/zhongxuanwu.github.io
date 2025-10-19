@@ -3,6 +3,7 @@ preprints:
     authors: <strong>Zhongxuan Wu</strong>, Xue-Xin Wei
     keywords:
       - replay
+      - dynamics
       - hippocampus
       - state-space models
     conference_short:

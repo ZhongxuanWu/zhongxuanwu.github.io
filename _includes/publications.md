@@ -39,9 +39,13 @@
       {{ link.others }}
       <br>
     {% endif %}
-    {% for kw in link.keywords %}
-      <a class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">{{ kw }}</a>
-    {% endfor %}
+    {% if link.keywords %}
+      <div class="keywords">
+        {% for kw in link.keywords %}
+          <a class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">{{ kw }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
   </div>
 </div>
@@ -95,9 +99,13 @@
         {{ link.others }}
         <br>
       {% endif %}
-      {% for kw in link.keywords %}
-        <a class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">{{ kw }}</a>
-      {% endfor %}
+      {% if link.keywords %}
+        <div class="keywords">
+          {% for kw in link.keywords %}
+            <a class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">{{ kw }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
   </div>
   </div>
 </div>
