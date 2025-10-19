@@ -47,7 +47,7 @@
       </div>
     {% endif %}
   </div>
-  </div>
+</div>
 </div>
 </li>
 <br>
@@ -107,7 +107,7 @@
         </div>
       {% endif %}
   </div>
-  </div>
+</div>
 </div>
 </li>
 <br>
