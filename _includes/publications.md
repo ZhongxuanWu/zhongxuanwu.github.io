@@ -16,30 +16,33 @@
     {% endif %}
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.paper }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors }}</div>
-      <div class="periodical"><em>{{ link.conference }}</em>
-      </div>
-    <div class="links">
-      <!-- {% if link.paper %} 
-      <a href="{{ link.paper }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Paper</a>
-      {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %} -->
-      {% if link.others %}
+    <div class="title"><a href="{{ link.paper }}">{{ link.title }}</a></div>
+    <div class="author">{{ link.authors }}</div>
+    <div class="periodical"><em>{{ link.conference }}</em></div>
+  <div class="links">
+    <!-- {% if link.paper %} 
+    <a href="{{ link.paper }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Paper</a>
+    {% endif %}
+    {% if link.code %} 
+    <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+    {% endif %}
+    {% if link.page %} 
+    <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+    {% endif %}
+    {% if link.bibtex %} 
+    <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+    {% endif %}
+    {% if link.notes %} 
+    <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
+    {% endif %} -->
+    {% if link.others %}
       {{ link.others }}
-      {% endif %}
-    </div>
+      <br>
+    {% endif %}
+    {% for kw in link.keywords %}
+      <a class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">{{ kw }}</a>
+    {% endfor %}
+  </div>
   </div>
 </div>
 </li>
@@ -69,10 +72,9 @@
     {% endif %}
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.paper }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors }}</div>
-      <div class="periodical"><em>{{ link.conference }}</em>
-      </div>
+    <div class="title"><a href="{{ link.paper }}">{{ link.title }}</a></div>
+    <div class="author">{{ link.authors }}</div>
+    <div class="periodical"><em>{{ link.conference }}</em></div>
     <div class="links">
       <!-- {% if link.paper %} 
       <a href="{{ link.paper }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Paper</a>
@@ -90,9 +92,13 @@
       <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
       {% endif %} -->
       {% if link.others %} 
-      {{ link.others }}
+        {{ link.others }}
+        <br>
       {% endif %}
-    </div>
+      {% for kw in link.keywords %}
+        <a class="btn btn-sm z-depth-0" target="_blank" style="font-size:12px;">{{ kw }}</a>
+      {% endfor %}
+  </div>
   </div>
 </div>
 </li>

@@ -1,6 +1,10 @@
 preprints:
   - title: Drift-diffusion dynamics of the hippocampal replay
     authors: <strong>Zhongxuan Wu</strong>, Xue-Xin Wei
+    keywords:
+      - replay
+      - hippocampus
+      - state-space models
     conference_short:
     conference: bioRxiv, 2025
     paper: https://doi.org/10.1101/2025.10.14.682470
@@ -14,6 +18,10 @@ preprints:
 papers:
   - title: "From route-level driving familiarity to scenario- and individual-level diversity: A preliminary human gaze study in simulated driving"
     authors: Haoji Liu, Yiming Yan, Nathaniel Powell, Yu Chul Lee, <strong>Zhongxuan Wu</strong>, Xue-Xin Wei, Mary Hayhoe, Junmin Wang
+    keywords:
+      - gaze
+      - control
+      - driving simulator
     conference_short:
     conference: The IEEE International Conference on Vehicular Electronics and Safety, 2025
     paper: https://drive.google.com/file/d/1tC59AgwXJz9ZTqva-Hj0qJgt09Z8KKN3/view?usp=sharing
@@ -25,6 +33,11 @@ papers:
 
   - title: Rapid context inference in a thalamocortical model using recurrent neural networks
     authors: Wei-Long Zheng, <strong>Zhongxuan Wu</strong>, Ali Hummos, Guangyu Robert Yang, Michael M. Halassa
+    keywords:
+      - plasticity
+      - context learning
+      - continual learning
+      - RNNs
     conference_short:
     conference: Nature Communications, 2024
     paper: https://www.nature.com/articles/s41467-024-52289-3
