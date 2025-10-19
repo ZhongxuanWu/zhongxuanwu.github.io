@@ -26,13 +26,15 @@
     {% else %}
     <link rel="stylesheet" href="./assets/css/font.css">
     {% endif %}
-    {% if site.auto_dark_mode %}
+    
+    <link rel="stylesheet" href="./assets/css/style-mix.css">
+    <!-- {% if site.auto_dark_mode %}
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/publications.css">
     {% else %}
     <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
-    {% endif %}
+    {% endif %} -->
 
   </head>
 
@@ -48,6 +50,10 @@
   {% endif %}
 
   <body>
+    
+    {% include toggle_theme_button.html %}
+    {% include toggle_theme_js.html %}
+
     <div class="wrapper">
       <header>
         {% if site.avatar %}
@@ -115,7 +121,7 @@
       <br>
 
       {% if site.enable_footnote %}
-      <p><small>Copyright © 2024-2025 Zhongxuan Wu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener"><autocolor>Jekyll</autocolor></a> and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener"><autocolor>Minimal Light</autocolor></a>.</small></p>
+      <p><small>Copyright © 2024-2025 Zhongxuan Wu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener"><autocolor>Jekyll</autocolor></a>, <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener"><autocolor>Minimal Light</autocolor></a> and <a href="https://github.com/abhinavs/moonwalk" target="_blank" rel="noopener"><autocolor>Moonwalk</autocolor></a>.</small></p>
       {% endif %}
 
       </section>
