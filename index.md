@@ -2,6 +2,8 @@
 layout: homepage
 ---
 
+<!-- content here -->
+
 {% include_relative _includes/about.md %}
 
 {% include_relative _includes/publications.md %}

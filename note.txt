@@ -12,7 +12,7 @@ neu337.png
     NEU337_Module 1_lecture 1.pdf Page 22
 
 
-bundle exec jekyll server
+bundle exec jekyll serve
 bundle exec jekyll serve --livereload --force_polling
 
 
