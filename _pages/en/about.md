@@ -28,7 +28,7 @@ My research focuses on studying the geometry and dynamics of neural representati
 generative models and manifold learning techniques. Beyond that, I am broadly interested in systems and computational neuroscience,
 psychology and machine learning.
 
-Outside of work, I love road trips for <a href="{{ '/assets/img/tavern-in-cavern.png' | relative_url }}" target="_blank" rel="noopener">hikes</a> and <a href="{{ '/assets/img/bbq.png' | relative_url }}" target="_blank" rel="noopener">park barbecues</a>. I am also a <a href="{{ '/assets/img/yotei.png' | relative_url }}" target="_blank" rel="noopener">gamer</a> and <a href="{{ '/assets/img/football.png' | relative_url }}" target="_blank" rel="noopener">sports fan</a>.
+Outside of work, I love road trips for <a href="/assets/img/tavern-in-cavern.png" target="_blank" rel="noopener">hikes</a> and <a href="/assets/img/bbq.png" target="_blank" rel="noopener">park barbecues</a>. I am also a <a href="/assets/img/yotei.png" target="_blank" rel="noopener">gamer</a> and <a href="/assets/img/football.png" target="_blank" rel="noopener">sports fan</a>.
 
 ## Education
 - 2022.08-Present, Ph.D, Department of Neuroscience, The University of Texas at Austin.

@@ -21,7 +21,7 @@ social: false # includes social icons at the bottom of the page
 
 我的研究聚焦于神经表征的几何结构与动力学，主要通过构建与应用状态空间模型、深度生成模型以及流形学习方法展开。此外，我也对系统与计算神经科学、心理学和机器学习方向保持广泛兴趣。
 
-在研究之外，我喜欢<a href="{{ '/assets/img/tavern-in-cavern.png' | relative_url }}" target="_blank" rel="noopener">徒步</a>和<a href="{{ '/assets/img/bbq.png' | relative_url }}" target="_blank" rel="noopener">室外烧烤</a>。我也是<a href="{{ '/assets/img/yotei.png' | relative_url }}" target="_blank" rel="noopener">主机游戏</a>与<a href="{{ '/assets/img/football.png' | relative_url }}" target="_blank" rel="noopener">体育</a>爱好者。
+在研究之外，我喜欢<a href="/assets/img/tavern-in-cavern.png" target="_blank" rel="noopener">徒步</a>和<a href="/assets/img/bbq.png" target="_blank" rel="noopener">室外烧烤</a>。我也是<a href="/assets/img/yotei.png" target="_blank" rel="noopener">主机游戏</a>与<a href="/assets/img/football.png" target="_blank" rel="noopener">体育</a>爱好者。
 
 ## 教育
 - 2022.08–至今，博士，德克萨斯大学奥斯汀分校神经科学系。
