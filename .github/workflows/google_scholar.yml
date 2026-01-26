@@ -1,0 +1,43 @@
+name: Citation
+
+on: 
+ page_build: 
+ schedule:
+  - cron:  '0 0 * * *'
+
+# on:
+#   # 手动触发事件
+#   workflow_dispatch:
+#     inputs:
+#       logLevel:
+#         description: 'Log level'
+#         required: true
+#         default: 'warning'
+#       tags:
+#         description: 'Test scenario tags'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Reqs
+      run: |
+        sudo apt-get install python3-setuptools
+    - name: Run
+      run: |
+        cd ./gs
+        pip3 install -r requirements.txt
+        python3 google.py
+        cd ./results
+                
+        git init
+        git config --local user.name "${GITHUB_ACTOR}"
+        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+        git add *.json
+        git add pubs/*.json
+        git commit -m "Updated Citation Data"
+        git push "${remote_repo}" HEAD:gs --force
+      env: 
+        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+
