@@ -1,0 +1,81 @@
+<div class="sidebar-content">
+  {% if site.sidebar_img %}
+  <div class="text-center mb-4">
+    <img src="{{ site.sidebar_img | prepend: '/assets/img/' | relative_url }}" 
+         class="img-fluid rounded-circle z-depth-1" 
+         style="width: 100%; max-width: 200px;" alt="profile">
+  </div>
+  {% endif %}
+
+  {% assign profile_name = site.language_names[site.active_lang] %}
+  {% assign localized_profile = site.language_profile[site.active_lang] %}
+  {% assign profile_position = localized_profile.position | default: site.position %}
+  {% assign profile_affiliation_short = localized_profile.affiliation_short | default: site.affiliation_short %}
+  {% assign profile_location = localized_profile.location | default: site.location %}
+  {% assign profile_affiliation = localized_profile.affiliation | default: site.affiliation %}
+  {% assign profile_email = localized_profile.email | default: site.email %}
+  {% assign profile_scholar_userid = localized_profile.scholar_userid | default: site.scholar_userid %}
+  {% assign profile_email_label = localized_profile.email_label | default: 'Email' %}
+  {% assign profile_scholar_label = localized_profile.scholar_label | default: 'Google Scholar' %}
+
+  <div class="text-center mb-4">
+    <h2 class="font-weight-bold" style="font-family: var(--global-font-family);">
+      {% if profile_name %}
+        {{ profile_name }}
+      {% else %}
+        {{ site.first_name }} {{ site.last_name }}
+      {% endif %}
+    </h2>
+    <p class="text-muted">{{ profile_position }} @ {{ profile_affiliation_short }}</p>
+  </div>
+
+  <div class="sidebar-links">
+    {% if profile_location %}
+    <div class="sidebar-item">
+      <i class="fas fa-map-marker-alt"></i><span>{{ profile_location }}</span>
+    </div>
+    {% endif %}
+
+    {% if profile_affiliation %}
+    <div class="sidebar-item">
+      <i class="fas fa-university"></i><span>{{ profile_affiliation }}</span>
+    </div>
+    {% endif %}
+
+    {% if profile_email %}
+    <div class="sidebar-item">
+      <i class="fas fa-envelope"></i><a href="mailto:{{ profile_email }}">{{ profile_email_label }}</a>
+    </div>
+    {% endif %}
+
+    {% if profile_scholar_userid %}
+    <div class="sidebar-item">
+      <i class="ai ai-google-scholar"></i><a href="https://scholar.google.com/citations?user={{ profile_scholar_userid }}" target="_blank">{{ profile_scholar_label }}</a>
+    </div>
+    {% endif %}
+
+    {% if site.orcid_id %}
+    <div class="sidebar-item">
+      <i class="ai ai-orcid"></i><a href="https://orcid.org/{{ site.orcid_id }}" target="_blank">ORCID</a>
+    </div>
+    {% endif %}
+
+    {% if site.github_username %}
+    <div class="sidebar-item">
+      <i class="fab fa-github"></i><a href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
+    </div>
+    {% endif %}
+
+    {% if site.researchgate_username %}
+    <div class="sidebar-item">
+      <i class="ai ai-researchgate"></i><a href="https://www.researchgate.net/profile/{{ site.researchgate_username }}" target="_blank">ResearchGate</a>
+    </div>
+    {% endif %}
+
+    {% if site.cv_url %}
+    <div class="sidebar-item">
+      <i class="fas fa-file-pdf"></i><a href="{{ site.cv_url | prepend: '/assets/pdf/' | relative_url }}" target="_blank">CV</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
