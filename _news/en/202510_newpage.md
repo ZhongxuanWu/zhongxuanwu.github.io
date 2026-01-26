@@ -1,0 +1,8 @@
+---
+layout: post
+date_noparse: 2025-10
+inline: true
+related_posts: true
+---
+
+My homepage [zhongxuanwu.github.io](zhongxuanwu.github.io) was successfully deployed on Github Pages.
