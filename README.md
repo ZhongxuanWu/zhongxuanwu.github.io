@@ -27,6 +27,7 @@ Install the following in the WSL2 environment:
 
 ```bash
 # Install Ruby dependencies
+bundle config set --local path 'vendor/bundle'
 bundle install
 
 # Serve locally
