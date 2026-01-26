@@ -1,6 +1,6 @@
-# Lab Website
+# Personal Website
 
-This repository contains the source code for the lab website.
+This repository contains the source code for my personal website.
 
 ## Local Installation
 
