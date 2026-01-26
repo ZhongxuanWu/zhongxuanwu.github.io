@@ -1,61 +1,61 @@
 name: Deploy site
 
 on:
-  # push:
-  #   branches:
-  #     - master
-  #     - main
-  #   paths:
-  #     - "assets/**"
-  #     - "**.bib"
-  #     - "**.html"
-  #     - "**.js"
-  #     - "**.liquid"
-  #     - "**/*.md"
-  #     - "**.yml"
-  #     - "Gemfile"
-  #     - "Gemfile.lock"
-  #     - "!.github/workflows/axe.yml"
-  #     - "!.github/workflows/broken-links.yml"
-  #     - "!.github/workflows/deploy-docker-tag.yml"
-  #     - "!.github/workflows/deploy-image.yml"
-  #     - "!.github/workflows/docker-slim.yml"
-  #     - "!.github/workflows/lighthouse-badger.yml"
-  #     - "!.github/workflows/prettier.yml"
-  #     - "!lighthouse_results/**"
-  #     - "!CONTRIBUTING.md"
-  #     - "!CUSTOMIZE.md"
-  #     - "!FAQ.md"
-  #     - "!INSTALL.md"
-  #     - "!README.md"
-  # pull_request:
-  #   branches:
-  #     - master
-  #     - main
-  #   paths:
-  #     - "assets/**"
-  #     - "**.bib"
-  #     - "**.html"
-  #     - "**.js"
-  #     - "**.liquid"
-  #     - "**/*.md"
-  #     - "**.yml"
-  #     - "Gemfile"
-  #     - "Gemfile.lock"
-  #     - "!.github/workflows/axe.yml"
-  #     - "!.github/workflows/broken-links.yml"
-  #     - "!.github/workflows/deploy-docker-tag.yml"
-  #     - "!.github/workflows/deploy-image.yml"
-  #     - "!.github/workflows/docker-slim.yml"
-  #     - "!.github/workflows/lighthouse-badger.yml"
-  #     - "!.github/workflows/prettier.yml"
-  #     - "!lighthouse_results/**"
-  #     - "!CONTRIBUTING.md"
-  #     - "!CUSTOMIZE.md"
-  #     - "!FAQ.md"
-  #     - "!INSTALL.md"
-  #     - "!README.md"
-  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.bib"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "!.github/workflows/axe.yml"
+      - "!.github/workflows/broken-links.yml"
+      - "!.github/workflows/deploy-docker-tag.yml"
+      - "!.github/workflows/deploy-image.yml"
+      - "!.github/workflows/docker-slim.yml"
+      - "!.github/workflows/lighthouse-badger.yml"
+      - "!.github/workflows/prettier.yml"
+      - "!lighthouse_results/**"
+      - "!CONTRIBUTING.md"
+      - "!CUSTOMIZE.md"
+      - "!FAQ.md"
+      - "!INSTALL.md"
+      - "!README.md"
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.bib"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "!.github/workflows/axe.yml"
+      - "!.github/workflows/broken-links.yml"
+      - "!.github/workflows/deploy-docker-tag.yml"
+      - "!.github/workflows/deploy-image.yml"
+      - "!.github/workflows/docker-slim.yml"
+      - "!.github/workflows/lighthouse-badger.yml"
+      - "!.github/workflows/prettier.yml"
+      - "!lighthouse_results/**"
+      - "!CONTRIBUTING.md"
+      - "!CUSTOMIZE.md"
+      - "!FAQ.md"
+      - "!INSTALL.md"
+      - "!README.md"
+  # workflow_dispatch:
 
 permissions:
   contents: write
@@ -94,13 +94,13 @@ jobs:
         with:
           folder: _site
       
-      - name: Deploy to Server
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USERNAME }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          port: ${{ secrets.SERVER_PORT }}
-          source: "_site/*"
-          target: "/www/wwwroot/haozhangcn"  # 服务器上的部署目录
-          strip_components: 1
+      # - name: Deploy to Server
+      #   uses: appleboy/scp-action@master
+      #   with:
+      #     host: ${{ secrets.SERVER_HOST }}
+      #     username: ${{ secrets.SERVER_USERNAME }}
+      #     key: ${{ secrets.SERVER_SSH_KEY }}
+      #     port: ${{ secrets.SERVER_PORT }}
+      #     source: "_site/*"
+      #     target: "/path/to/server"  # 服务器上的部署目录
+      #     strip_components: 1
