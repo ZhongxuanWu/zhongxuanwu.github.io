@@ -118,7 +118,7 @@
           {% endunless %}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        , and
+        , {{ site.data[site.active_lang].strings.bibliography.last_author_prefix }}
         <span
           class="more-authors"
           title="click to view {{ more_authors_hide }}"

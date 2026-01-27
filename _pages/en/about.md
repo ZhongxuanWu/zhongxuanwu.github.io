@@ -31,12 +31,12 @@ psychology and machine learning.
 Outside of work, I love road trips for <a href="/assets/img/tavern-in-cavern.png" target="_blank" rel="noopener">hikes</a> and <a href="/assets/img/bbq.png" target="_blank" rel="noopener">park barbecues</a>. I am also a <a href="/assets/img/yotei.png" target="_blank" rel="noopener">gamer</a> and <a href="/assets/img/football.png" target="_blank" rel="noopener">sports fan</a>.
 
 ## Education
-- 2022.08-Present, Ph.D, Department of Neuroscience, The University of Texas at Austin.
-- 2018.09-2022.06, B.S., School of Life Sciences, Peking University.
+- 2022.08 – Present, Ph.D, Department of Neuroscience, The University of Texas at Austin.
+- 2018.09 – 2022.06, B.S., School of Life Sciences, Peking University.
 
 ## Experiences
-- 2025.01-2025.05, Teaching assistant for NEURO 337 Neural Computation with <a href="https://sites.google.com/view/xxweineuraltheory/research">Prof. Xue-Xin Wei</a>. Upper-division course in theoretical and computational neuroscience. I prepared complete homework and exam solution sets, delivered four review lectures, and led several Q&A sessions.
-- 2023.08-2023.12, Teaching assistant for NEURO 365L Neurobiology Lab with <a href="https://golding9.wixsite.com/website">Prof. Nace Golding</a>. Upper-division lab course on electrophysiology. I prepared session solutions, performed pre-lab equipment troubleshooting, helped students through patch-clamp recordings and pharmacological manipulations, and organized post-lab Q&A sessions.
+- 2025.01 – 2025.05, Teaching assistant for NEURO 337 Neural Computation with <a href="https://sites.google.com/view/xxweineuraltheory/research">Prof. Xue-Xin Wei</a>. Upper-division course in theoretical and computational neuroscience. I prepared complete homework and exam solution sets, delivered four review lectures, and led several Q&A sessions.
+- 2023.08 – 2023.12, Teaching assistant for NEURO 365L Neurobiology Lab with <a href="https://golding9.wixsite.com/website">Prof. Nace Golding</a>. Upper-division lab course on electrophysiology. I prepared session solutions, performed pre-lab equipment troubleshooting, helped students through patch-clamp recordings and pharmacological manipulations, and organized post-lab Q&A sessions.
 
 <!--more-->
 

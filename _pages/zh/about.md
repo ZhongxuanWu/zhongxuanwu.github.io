@@ -24,14 +24,14 @@ social: false # includes social icons at the bottom of the page
 在研究之外，我喜欢<a href="/assets/img/tavern-in-cavern.png" target="_blank" rel="noopener">徒步</a>和<a href="/assets/img/bbq.png" target="_blank" rel="noopener">室外烧烤</a>。我也是<a href="/assets/img/yotei.png" target="_blank" rel="noopener">主机游戏</a>与<a href="/assets/img/football.png" target="_blank" rel="noopener">体育</a>爱好者。
 
 ## 教育
-- 2022.08–至今，博士，德克萨斯大学奥斯汀分校神经科学系。
-- 2018.09–2022.06，学士，北京大学生命科学学院。
+- 2022.08 – 至今，博士，德克萨斯大学奥斯汀分校神经科学系。
+- 2018.09 – 2022.06，学士，北京大学生命科学学院。
 
 ## 职业经历
-- 2025.01–2025.05，NEURO 337 Neural Computation 助教（授课教师：<a href="https://sites.google.com/view/xxweineuraltheory/research">Xue-Xin Wei</a>教授）。
+- 2025.01 – 2025.05，NEURO 337 Neural Computation 助教（授课教师：<a href="https://sites.google.com/view/xxweineuraltheory/research">Xue-Xin Wei</a>教授）。
   <br/>
   该课程为高年级理论与计算神经科学课程。我负责准备完整作业与考试解答，主讲四次复习课，并组织多场答疑。
-- 2023.08–2023.12，NEURO 365L Neurobiology Lab 助教（授课教师：<a href="https://golding9.wixsite.com/website">Nace Golding</a>教授）。
+- 2023.08 – 2023.12，NEURO 365L Neurobiology Lab 助教（授课教师：<a href="https://golding9.wixsite.com/website">Nace Golding</a>教授）。
   <br/>
   该课程为高年级电生理实验课程。我负责准备课堂解题方案、进行实验前设备排查、协助学生完成膜片钳记录与药理学操作，并组织实验后的答疑讨论。
 
