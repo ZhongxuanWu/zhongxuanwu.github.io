@@ -1,9 +1,13 @@
 name: Citation
 
-on: 
- page_build: 
- schedule:
-  - cron:  '0 0 * * *'
+on:
+  # Disabled automatic triggers to prevent unbounded Actions usage.
+  workflow_dispatch:
+
+# on: 
+#  page_build: 
+#  schedule:
+#   - cron:  '0 0 * * *'
 
 # on:
 #   # 手动触发事件
@@ -18,6 +22,7 @@ on:
 
 jobs:
   build:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
