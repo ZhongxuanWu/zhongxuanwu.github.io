@@ -112,16 +112,16 @@
 
         <!-- DOI and HTML -->
         {% if entry.doi %}
-            doi: {{ entry.doi }}. [<a href="http://doi.org/{{ entry.doi }}" role="button" style="padding-top: 0em; padding-bottom: 0px;">HTML</a>]
+            doi: {{ entry.doi }}. [<a href="http://doi.org/{{ entry.doi }}" role="button" style="padding-top: 0em; padding-bottom: 0px;">doi</a>]
         {% endif %}
 
         {% if entry.arxiv %}[
           <a href="https://arxiv.org/abs/{{ entry.arxiv }}" role="button" style="padding-top: 0em; padding-bottom: 0px;">arXiv</a>
         ]{% endif %}
 
-        {% if entry.code %}[
-          <a href="{{ entry.code }}" role="button" style="padding-top: 0em; padding-bottom: 0px;">code</a>
-        ]{% endif %}
+        {% if entry.code %}
+            [<a href="{{ entry.code }}" role="button" style="padding-top: 0em; padding-bottom: 0px;">code</a>]
+        {% endif %}
 
         {% if entry.award %}
         {{ entry.award | markdownify }}
