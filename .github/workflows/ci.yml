@@ -1,4 +1,4 @@
-name: Check and deploy
+name: Build and deploy
 
 on:
   push:
@@ -15,7 +15,7 @@ permissions:
   contents: read
 
 jobs:
-  check:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -46,13 +46,15 @@ jobs:
       - name: Install dependencies
         run: ./bin/setup
 
-      - name: Install Chromium system dependencies
-        run: npx --no-install playwright install-deps chromium
+      - name: Build site
+        run: ./bin/build
 
-      - name: Check site
-        run: ./bin/check
+      - name: Verify deployable output
+        run: |
+          test -f _site/index.html
+          test -f _site/zh/index.html
 
-      - name: Upload checked site
+      - name: Upload built site
         uses: actions/upload-artifact@v4
         with:
           name: site
@@ -63,7 +65,7 @@ jobs:
 
   deploy:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: check
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: write

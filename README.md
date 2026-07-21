@@ -38,7 +38,7 @@ Create the production site, purge unused CSS, and run the post-build normalizati
 ./bin/build
 ```
 
-Run the complete validation suite used by CI, including formatting, content contracts, the production build, internal-link checks, visual regression tests, and accessibility tests:
+Run the complete optional validation suite, including formatting, content contracts, the production build, internal-link checks, visual regression tests, and accessibility tests:
 
 ```bash
 ./bin/check
@@ -46,8 +46,11 @@ Run the complete validation suite used by CI, including formatting, content cont
 
 The visual snapshots preserve the current English and Chinese presentation across desktop/mobile and light/dark modes. The accessibility check uses the current site as its baseline and fails on new serious or critical violations.
 
+The deployment workflow gates publication on a successful production build with English and Chinese entry points. The broader validation suite remains available for local and manual checks without blocking publication.
+
 The generated site is written to `_site/`. The build scripts merge `_config.yml`, `_config.features.yml`, and `_config.libraries.yml` in that order; use the scripts rather than invoking Jekyll directly.
 
 ## Credits
+
 - [multi-language-al-folio](https://github.com/george-gca/multi-language-al-folio)
 - [al-folio](https://github.com/alshedivat/al-folio)
