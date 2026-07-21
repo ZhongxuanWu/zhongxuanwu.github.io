@@ -1,4 +1,5 @@
 ---
+page_id: 202510_newpage
 layout: post
 date_noparse: 2025-10
 inline: true

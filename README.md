@@ -2,40 +2,51 @@
 
 This repository contains the source code for my personal website.
 
-## Local Installation
+## Supported development environment
 
-### General instructions
+The supported local environment is WSL2. The repository pins the toolchain used by local development and CI:
 
-Check the INSTALL.md from [multi-language-al-folio](https://github.com/george-gca/multi-language-al-folio/blob/main/INSTALL.md).
+- Ruby 3.2.3 and Bundler 4.0.4
+- Node.js 18.19.1
+- Python 3.12.3 and nbconvert 6.5.3
 
-### Tested environment
+Install Ruby, Node.js, Python with `pip` and `venv` support, and ImageMagick in WSL2. Version managers such as `rbenv`, `nvm`, and `pyenv` will read the version files in this repository. Docker is not part of the supported workflow.
 
-- **Working:** WSL2 (without Docker)
-- **Not working:** Windows 11 (with or without Docker)
+## Setup and development
 
-### Prerequisites
-
-Install the following in the WSL2 environment:
-
-- Node.js + npm
-- Ruby
-- Bundler
-- ImageMagick
-- Jupyter
-
-### Install & run
+Install all repository-managed dependencies and the Chromium build used by the site tests:
 
 ```bash
-# Install Ruby dependencies
-bundle config set --local path 'vendor/bundle'
-bundle install
-
-# Serve locally
-bundle exec jekyll serve --livereload
-
-# Clean build artifacts
-bundle exec jekyll clean
+./bin/setup
 ```
+
+On a minimal WSL2 installation, Chromium may also need its system libraries. Install them once after setup with `sudo npx playwright install-deps chromium` if `./bin/check` reports a missing shared library.
+
+Start the multilingual development server with live reload:
+
+```bash
+./bin/dev
+```
+
+The server is available at <http://localhost:4000>. Extra Jekyll options can be passed to the script, for example `./bin/dev --host 0.0.0.0`.
+
+## Build and validation
+
+Create the production site, purge unused CSS, and run the post-build normalization:
+
+```bash
+./bin/build
+```
+
+Run the complete validation suite used by CI, including formatting, content contracts, the production build, internal-link checks, visual regression tests, and accessibility tests:
+
+```bash
+./bin/check
+```
+
+The visual snapshots preserve the current English and Chinese presentation across desktop/mobile and light/dark modes. The accessibility check uses the current site as its baseline and fails on new serious or critical violations.
+
+The generated site is written to `_site/`. The build scripts merge `_config.yml`, `_config.features.yml`, and `_config.libraries.yml` in that order; use the scripts rather than invoking Jekyll directly.
 
 ## Credits
 

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)/_environment"
+prepare_build_environment
+
+export JEKYLL_ENV=development
+exec bundle _4.0.4_ exec jekyll serve --config "$JEKYLL_CONFIG" --livereload "$@"

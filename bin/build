@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)/_environment"
+prepare_build_environment
+
+export JEKYLL_ENV=production
+bundle _4.0.4_ exec jekyll clean --config "$JEKYLL_CONFIG"
+bundle _4.0.4_ exec jekyll build --config "$JEKYLL_CONFIG" "$@"
+npm run purgecss
+
+if [[ -f scripts/postbuild.rb ]]; then
+  bundle _4.0.4_ exec ruby scripts/postbuild.rb _site
+fi

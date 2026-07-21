@@ -1,4 +1,5 @@
 ---
+page_id: manifold
 layout: page
 title: Poisson Identifiable VAE for Neural Manifold Geometry
 description: Robust, identifiable latent-variable modeling to quantify geometry and topology of neural representations

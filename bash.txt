@@ -1,0 +1,13 @@
+Live preview at http://localhost:4000
+    ./bin/dev
+
+
+
+First-time dependency setup
+    ./bin/setup
+
+Compile the production site
+    ./bin/build
+
+Complete test compilation
+    ./bin/check

@@ -2,14 +2,15 @@ temp.txt
 
 _site
 .bundle
+.venv/
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-.DS_store
-.ruby-version
+.DS_Store
 .tweet-cache
-Gemfile.lock
 assets/libs/
 node_modules/
-vendor
+playwright-report/
+test-results/
+vendor/
 .idea

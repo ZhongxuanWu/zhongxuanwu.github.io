@@ -1,6 +1,25 @@
 {
+  "name": "zhongxuanwu.github.io",
+  "private": true,
+  "engines": {
+    "node": "18.19.1"
+  },
+  "scripts": {
+    "build": "./bin/build",
+    "check": "./bin/check",
+    "dev": "./bin/dev",
+    "format": "prettier --write README.md package.json package-lock.json purgecss.config.js playwright.config.js tests/site.spec.js '.github/workflows/*.yml'",
+    "format:check": "prettier --check README.md package.json package-lock.json purgecss.config.js playwright.config.js tests/site.spec.js '.github/workflows/*.yml'",
+    "purgecss": "purgecss --config purgecss.config.js",
+    "test:site": "playwright test",
+    "test:visual": "playwright test --grep @visual",
+    "test:a11y": "playwright test --grep @a11y"
+  },
   "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
+    "@playwright/test": "1.61.1",
     "@shopify/prettier-plugin-liquid": "1.4.0",
-    "prettier": "^3.1.1"
+    "prettier": "3.1.1",
+    "purgecss": "8.0.0"
   }
 }

@@ -1,4 +1,5 @@
 ---
+page_id: fef_dv
 layout: page
 title: Single-Trial Decision Variable Dynamics in Frontal Eye Field
 description: Testing ramping vs stepping hypotheses with HMMs and latent manifolds in macaque FEF

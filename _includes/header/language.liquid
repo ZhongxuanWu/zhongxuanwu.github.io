@@ -1,0 +1,119 @@
+          <!-- Toogle language -->
+          {% if site.languages.size >= 2 %}
+            {% assign language_labels = site.language_labels %}
+            {% if site.languages.size == 2 %}
+              {% if site.active_lang == site.languages.first %}
+                {% assign other_language = site.languages.last %}
+              {% else %}
+                {% assign other_language = site.languages.first %}
+              {% endif %}
+              {% assign translated_collection_url = nil %}
+              {% if page.page_id and page.collection == 'projects' or page.page_id and page.collection == 'news' %}
+                {% if other_language == site.default_lang %}
+                  {% capture translated_collection_url %}{{ site.baseurl }}/{{ page.collection }}/{{ other_language }}/{{ page.page_id }}/{% endcapture %}
+                {% else %}
+                  {% capture translated_collection_url %}{{ site.baseurl }}/{{ other_language }}/{{ page.collection }}/{{ other_language }}/{{ page.page_id }}/{% endcapture %}
+                {% endif %}
+              {% endif %}
+              <li class="nav-item active">
+                {% if translated_collection_url %}
+                  <a class="nav-link" {% static_href -%} href="{{ translated_collection_url }}" {%- endstatic_href %}>
+                    {% if site.country_flag %}
+                      <span class="fi fi-{{ other_language | split: "-" | last }}"></span>
+                    {% else %}
+                      {% if language_labels and language_labels[other_language] %}
+                        {{ language_labels[other_language] }}
+                      {% else %}
+                        {{ other_language | upcase }}
+                      {% endif %}
+                    {%- endif -%}
+                  </a>
+                {% elsif site.active_lang == site.default_lang %}
+                  <a class="nav-link" {% static_href -%} href="{{ site.baseurl }}/{{ other_language }}{{ page.url }}" {%- endstatic_href %}>
+                    {% if site.country_flag %}
+                      <span class="fi fi-{{ other_language | split: "-" | last }}"></span>
+                    {% else %}
+                      {% if language_labels and language_labels[other_language] %}
+                        {{ language_labels[other_language] }}
+                      {% else %}
+                        {{ other_language | upcase }}
+                      {% endif %}
+                    {%- endif -%}
+                  </a>
+                {% else %}
+                  <a class="nav-link" {% static_href -%} href="{{ site.baseurl }}{{ page.url }}" {%- endstatic_href %}>
+                    {% if site.country_flag %}
+                      <span class="fi fi-{{ site.default_lang | split: "-" | last }}"></span>
+                    {% else %}
+                      {% if language_labels and language_labels[site.default_lang] %}
+                        {{ language_labels[site.default_lang] }}
+                      {% else %}
+                        {{ site.default_lang | upcase }}
+                      {% endif %}
+                    {%- endif -%}
+                  </a>
+                {% endif %}
+              </li>
+            {% else %}
+              <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {% if site.country_flag %}
+                    <span class="fi fi-{{ site.active_lang | split: "-" | last }}"></span>
+                  {% else %}
+                    {% if language_labels and language_labels[site.active_lang] %}
+                      {{- language_labels[site.active_lang] }}
+                    {% else %}
+                      {{- site.active_lang | upcase }}
+                    {% endif %}
+                  {%- endif -%}
+                  {% if page.title == p.title %}
+                    <span class="sr-only">(current)</span>
+                  {% endif %}
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  {% assign language_set = false %}
+                  {% for l in site.languages %}
+                    {% if l != site.active_lang %}
+                      {% if language_set %}
+                        <div class="dropdown-divider"></div>
+                      {% endif %}
+                      {% if l == site.default_lang %}
+                        <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}{{ page.url }}" {%- endstatic_href %}>
+                          {% if site.country_flag %}
+                            <span class="fi fi-{{ l | split: "-" | last }}"></span>
+                          {% else %}
+                            {% if language_labels and language_labels[l] %}
+                              {{ language_labels[l] }}
+                            {% else %}
+                              {{ l | upcase }}
+                            {% endif %}
+                          {%- endif -%}
+                        </a>
+                      {% else %}
+                        <a class="dropdown-item" {% static_href -%} href="{{ site.baseurl }}/{{ l }}{{ page.url }}" {%- endstatic_href %}>
+                          {% if site.country_flag %}
+                            <span class="fi fi-{{ l | split: "-" | last }}"></span>
+                          {% else %}
+                            {% if language_labels and language_labels[l] %}
+                              {{ language_labels[l] }}
+                            {% else %}
+                              {{ l | upcase }}
+                            {% endif %}
+                          {%- endif -%}
+                        </a>
+                      {% endif %}
+                      {% assign language_set = true %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </li>
+            {% endif %}
+          {% endif %}

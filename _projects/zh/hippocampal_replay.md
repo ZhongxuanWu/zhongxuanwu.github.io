@@ -1,4 +1,5 @@
 ---
+page_id: hippocampal_replay
 layout: page
 title: Interpretable Switching State-Space Models for Hippocampal Replay
 description: Characterizing spatiotemporal structure of sharp-wave ripple replay with drift–diffusion dynamics

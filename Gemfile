@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '3.2.3'
+
 gem 'jekyll'
 
 # Core plugins that directly affect site building

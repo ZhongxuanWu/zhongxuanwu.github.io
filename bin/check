@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+REPOSITORY_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$REPOSITORY_ROOT"
+
+npm run format:check
+
+if [[ -f scripts/validate_content.rb ]]; then
+  bundle _4.0.4_ exec ruby scripts/validate_content.rb
+fi
+
+if [[ -f test/cache_bust_test.rb ]]; then
+  bundle _4.0.4_ exec ruby test/cache_bust_test.rb
+fi
+
+./bin/build
+
+if [[ -f scripts/verify_site.rb ]]; then
+  bundle _4.0.4_ exec ruby scripts/verify_site.rb _site
+fi
+
+if [[ -f scripts/check_links.rb ]]; then
+  bundle _4.0.4_ exec ruby scripts/check_links.rb _site
+fi
+
+npm run test:site
