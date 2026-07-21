@@ -49,8 +49,5 @@ The visual snapshots preserve the current English and Chinese presentation acros
 The generated site is written to `_site/`. The build scripts merge `_config.yml`, `_config.features.yml`, and `_config.libraries.yml` in that order; use the scripts rather than invoking Jekyll directly.
 
 ## Credits
-
-- Customized from [Hao Zhang's website](https://haozhangcn.github.io/).
-- Upstream templates:
-  - [multi-language-al-folio](https://github.com/george-gca/multi-language-al-folio)
-  - [al-folio](https://github.com/alshedivat/al-folio)
+- [multi-language-al-folio](https://github.com/george-gca/multi-language-al-folio)
+- [al-folio](https://github.com/alshedivat/al-folio)
