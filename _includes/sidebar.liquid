@@ -66,6 +66,12 @@
     </div>
     {% endif %}
 
+    {% if site.linkedin_username %}
+    <div class="sidebar-item">
+      <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" target="_blank">LinkedIn</a>
+    </div>
+    {% endif %}
+
     {% if site.researchgate_username %}
     <div class="sidebar-item">
       <i class="ai ai-researchgate"></i><a href="https://www.researchgate.net/profile/{{ site.researchgate_username }}" target="_blank">ResearchGate</a>

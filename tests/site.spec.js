@@ -92,6 +92,17 @@ for (const homepage of homepages) {
   });
 }
 
+for (const homepage of homepages) {
+  test(`${homepage.language} homepage links to LinkedIn from the sidebar`, async ({ page }) => {
+    await page.goto(homepage.path, { waitUntil: "domcontentloaded" });
+
+    const linkedInLink = page.locator('#sidebar a[href="https://www.linkedin.com/in/zhongxuanwu/"]');
+    await expect(linkedInLink).toBeVisible();
+    await expect(linkedInLink).toHaveText("LinkedIn");
+    await expect(linkedInLink).toHaveAttribute("target", "_blank");
+  });
+}
+
 test("theme and language controls retain their behavior", async ({ page }) => {
   await prepareStablePage(page, "/", "light", { width: 1440, height: 1000 });
 
