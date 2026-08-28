@@ -125,6 +125,8 @@ test("collection language controls resolve paired pages", async ({ page }) => {
     ["/zh/projects/zh/fef_dv/", "/projects/en/fef_dv/"],
     ["/news/en/20250426_neti/", "/zh/news/zh/20250426_neti/"],
     ["/zh/news/zh/20250426_neti/", "/news/en/20250426_neti/"],
+    ["/news/en/20260826_plos_acceptance/", "/zh/news/zh/20260826_plos_acceptance/"],
+    ["/zh/news/zh/20260826_plos_acceptance/", "/news/en/20260826_plos_acceptance/"],
   ];
 
   for (const [source, target] of pairs) {
