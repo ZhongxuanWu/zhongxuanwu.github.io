@@ -9,6 +9,9 @@ nav_order: 6
 ---
 
 ## 审稿
+
+- Nature 审稿人（共同审稿）
+- PLOS Computational Biology 审稿人
 - 2025, IEEE International Conference on Vehicular Electronics and Safety (ICVES)
 - 2024, Conference on Cognitive Computational Neuroscience (CCN)
 

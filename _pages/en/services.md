@@ -10,6 +10,9 @@ nav_order: 6
 ---
 
 ## Reviewers
+
+- Reviewer (co-reviewer) for Nature
+- Reviewer for PLOS Computational Biology
 - 2025, IEEE International Conference on Vehicular Electronics and Safety (ICVES)
 - 2024, Conference on Cognitive Computational Neuroscience (CCN)
 

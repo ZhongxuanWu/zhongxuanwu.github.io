@@ -62,7 +62,7 @@
         {% endif %}
           
         <!-- Title -->
-        <!-- "<b><a href="http://doi.org/{{ entry.doi }}">{{ entry.title }}</a></b>."-->
+        <!-- "<b><a href="https://doi.org/{{ entry.doi }}">{{ entry.title }}</a></b>."-->
         "<b>{{ entry.title }}</b>."
    
 
@@ -115,7 +115,7 @@
 
         <!-- DOI and HTML -->
         {% if entry.doi %}
-            doi: {{ entry.doi }}. [<a href="http://doi.org/{{ entry.doi }}" role="button" style="padding-top: 0em; padding-bottom: 0px;">doi</a>]
+            doi: {{ entry.doi }}. [<a href="https://doi.org/{{ entry.doi }}" role="button" style="padding-top: 0em; padding-bottom: 0px;">doi</a>]
         {% endif %}
 
         {% if entry.preprint %}[

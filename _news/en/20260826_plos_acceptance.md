@@ -6,4 +6,4 @@ inline: true
 related_posts: true
 ---
 
-Our paper "[Drift-diffusion dynamics of hippocampal replay](https://doi.org/10.1101/2025.10.14.682470)" has been accepted for publication in PLOS Computational Biology!
+Our paper "[Drift-diffusion dynamics of hippocampal replay](https://doi.org/10.1371/journal.pcbi.1014761)" has been accepted for publication in PLOS Computational Biology!
