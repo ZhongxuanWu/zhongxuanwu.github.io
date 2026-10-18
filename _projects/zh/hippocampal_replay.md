@@ -1,35 +1,34 @@
 ---
 page_id: hippocampal_replay
 layout: page
-title: Interpretable Switching State-Space Models for Hippocampal Replay
-description: Characterizing spatiotemporal structure of sharp-wave ripple replay with drift–diffusion dynamics
+title: 海马重放的统计模型
+description: 刻画海马尖波涟漪事件中重放的空间轨迹及其随时间的变化
 img:
 importance: 1
 category: PI
 giscus_comments: false
 ---
 
-**Lab:** Xue-Xin Wei Lab, Department of Neuroscience, The University of Texas at Austin<br>
-**Theme:** Geometry & dynamics of population codes during hippocampal replay (SWRs)
+**实验室：** 德克萨斯大学奥斯汀分校神经科学系 Xue-Xin Wei 实验室<br>
+**研究主题：** 海马重放过程中神经群体活动的几何结构与动力学
 
-## Overview
-During hippocampal sharp-wave ripples (SWRs), neural activity can “replay” spatial trajectories. A major challenge is that replay structure is often **heterogeneous within an event** and hard to capture with single summary metrics or purely post-hoc analyses of decoded posteriors.
+## 研究概述
+在海马尖波涟漪（SWR）事件中，神经活动可以重放空间中的路径。这些活动的结构可能在**同一次事件内发生变化**，因此难以用单一指标加以描述。我使用可解释的统计模型研究这些变化，同时估计神经活动所表征的位置及其随时间演变的方式。
 
-## What I’m building
-A **switching hidden Markov model (HMM)** that infers (i) a latent 1D position trajectory and (ii) the **time-varying dynamics regime** within each SWR:
-- **Dynamics regimes:** drift–diffusion, stationary, and uniform resampling
-- **Interpretable parameters:** drift (replay speed) and diffusion (trajectory precision)
-- **Observation model:** Poisson spiking driven by place fields (event-level decoding)
+## 模型
+**切换隐马尔可夫模型（HMM）**用于估计每次尖波涟漪事件中的一维位置轨迹，以及**各个时刻的动力学类型**：
+- **动力学模式：** 漂移–扩散、位置保持不变和位置的均匀重采样。
+- **可解释参数：** 漂移刻画重放速度，扩散刻画轨迹的变异程度，与轨迹精度相关。
+- **观测模型：** 基于位置场的泊松神经发放模型，用于从记录到的脉冲中估计神经活动所表征的位置。
 
-## Why it matters
-This framework provides **event-level, probabilistic** characterization of replay beyond classic pipelines (decode then score), enabling:
-- principled detection of within-event **switches** in dynamics,
-- quantification of replay **speed** and **precision** across events and sessions,
-- rigorous comparison of replay vs. preplay using multiple shuffle controls.
+## 研究目的
+该框架对**单次事件内的重放进行概率描述**，将位置估计与轨迹分析结合起来，而非先估计位置、再单独评价轨迹。它可用于：
+- 识别同一次事件内**不同动力学模式之间的切换**；
+- 定量比较不同事件和记录时段中的重放**速度**与**精度**；
+- 使用多种数据打乱对照，比较重放（replay）与预演（preplay）。
 
-## Methods & validation
-- Maximum-likelihood fitting via marginal likelihood (forward pass over joint dynamics × position chain)
-- Posterior inference via forward–backward to obtain:
-  - **position posterior** and **dynamics posterior**
-- Model comparison with **AIC** to adjudicate among candidate dynamics models
-- Extensive simulation-based recovery analyses to quantify parameter reliability at low spike counts
+## 方法与验证
+- 在动力学与位置的联合状态序列上进行前向计算，通过最大化边际似然估计参数。
+- 使用前向–后向推断，获得各个时刻**位置与动力学的后验概率分布**。
+- 使用**赤池信息准则（AIC）**比较候选动力学模型。
+- 通过模拟数据的参数恢复分析，评估脉冲数量较少时参数估计的可靠性。

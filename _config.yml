@@ -30,7 +30,7 @@ language_profile:
     email_label: 邮箱
     scholar_label: 谷歌学术
 
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website, computational neuroscience, psychology, cognitive sciences, machine learning # add your own keywords or leave empty
+keywords: theoretical neuroscience, computational neuroscience, mathematics, statistics, psychology, probabilistic modeling, neural population dynamics
 
 icon: campfire.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -132,6 +132,7 @@ exclude:
   - readme_preview/
   - requirements.txt
   - scripts/
+  - temp/
   - test/
   - test-results/
   - tests/

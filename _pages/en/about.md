@@ -24,9 +24,7 @@ latest_posts:
 
 I'm a Ph.D. student in the <a href="https://neuroscience.utexas.edu/">Department of Neuroscience</a> at <a href="https://www.utexas.edu/">The University of Texas at Austin</a>, working with Dr. <a href="https://sites.google.com/view/xxweineuraltheory/research">Xue-Xin Wei</a>. Prior to that, I received my B.S. in Biology from <a href="https://www.pku.edu.cn/">Peking University</a> in 2022, where I was advised by Dr. <a href="https://www.bio.pku.edu.cn/homes/Index/news_cont_jl/16/13.html">Louis Tao</a>. During my undergraduate studies, I completed a research internship at <a href="https://bcs.mit.edu/">MIT BCS</a> with Drs. <a href="https://weilongzheng.github.io/">Wei-Long Zheng</a>, <a href="https://scholar.google.com/citations?user=hrI8aH8AAAAJ&hl=en&oi=sra">Guangyu Robert Yang</a>, and <a href="https://halassalab.tufts.edu/">Michael Halassa</a>.
 
-My research focuses on studying the geometry and dynamics of neural representations by developing and applying state-space models, deep
-generative models and manifold learning techniques. Beyond that, I am broadly interested in systems and computational neuroscience,
-psychology and machine learning.
+My research focuses on the geometry and dynamics of neural population activity and how these patterns support cognition. I develop interpretable mathematical and computational models, including state-space models, to study the low-dimensional structure of neural recordings. I am broadly interested in systems, theoretical, and computational neuroscience, psychology, and statistics.
 
 Outside of work, I love road trips for <a href="/assets/img/tavern-in-cavern.png" target="_blank" rel="noopener">hikes</a> and <a href="/assets/img/bbq.png" target="_blank" rel="noopener">park barbecues</a>. I am also a <a href="/assets/img/yotei.png" target="_blank" rel="noopener">gamer</a> and <a href="/assets/img/football.png" target="_blank" rel="noopener">sports fan</a>.
 
@@ -35,8 +33,8 @@ Outside of work, I love road trips for <a href="/assets/img/tavern-in-cavern.png
 - 2018.09 – 2022.06, B.S., School of Life Sciences, Peking University.
 
 ## Experiences
-- 2025.01 – 2025.05, Teaching assistant for NEURO 337 Neural Computation with <a href="https://sites.google.com/view/xxweineuraltheory/research">Prof. Xue-Xin Wei</a>. Upper-division course in theoretical and computational neuroscience. I prepared complete homework and exam solution sets, delivered four review lectures, and led several Q&A sessions.
-- 2023.08 – 2023.12, Teaching assistant for NEURO 365L Neurobiology Lab with <a href="https://golding9.wixsite.com/website">Prof. Nace Golding</a>. Upper-division lab course on electrophysiology. I prepared session solutions, performed pre-lab equipment troubleshooting, helped students through patch-clamp recordings and pharmacological manipulations, and organized post-lab Q&A sessions.
+- 2025.01 – 2025.05, Teaching assistant for NEURO 337 Neural Computation with <a href="https://sites.google.com/view/xxweineuraltheory/research">Prof. Xue-Xin Wei</a>. Upper-division course in theoretical and computational neuroscience. I prepared complete homework and exam solutions, delivered four review lectures, and led question-and-answer sessions.
+- 2023.08 – 2023.12, Teaching assistant for NEURO 365L Neurobiology Lab with <a href="https://golding9.wixsite.com/website">Prof. Nace Golding</a>. Upper-division electrophysiology laboratory course. I prepared session solutions, troubleshot equipment before class, helped students with patch-clamp recordings and experiments on drug effects, and organized post-lab question-and-answer sessions.
 
 <!--more-->
 

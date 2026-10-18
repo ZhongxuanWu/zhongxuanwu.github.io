@@ -19,7 +19,7 @@ social: false # includes social icons at the bottom of the page
 
 我是<a href="https://neuroscience.utexas.edu/">德克萨斯大学奥斯汀分校</a>神经科学系的博士生，导师为<a href="https://sites.google.com/view/xxweineuraltheory/research">Xue-Xin Wei</a>教授。此前我于2022年在<a href="https://www.pku.edu.cn/">北京大学</a>获得生物学学士学位，导师为<a href="https://www.bio.pku.edu.cn/homes/Index/news_cont_jl/16/13.html">陶乐天</a>教授。本科期间，我在<a href="https://bcs.mit.edu/">MIT BCS</a>完成科研实习，与<a href="https://weilongzheng.github.io/">Wei-Long Zheng</a>、<a href="https://scholar.google.com/citations?user=hrI8aH8AAAAJ&hl=en&oi=sra">Guangyu Robert Yang</a>和<a href="https://halassalab.tufts.edu/">Michael Halassa</a>教授合作。
 
-我的研究聚焦于神经表征的几何结构与动力学，主要通过构建与应用状态空间模型、深度生成模型以及流形学习方法展开。此外，我也对系统与计算神经科学、心理学和机器学习方向保持广泛兴趣。
+我的研究聚焦于神经群体活动的几何结构与动力学，以及这些活动模式如何支持认知。我构建可解释的数学与计算模型，包括状态空间模型，以研究神经记录中的低维结构。此外，我也对系统神经科学、理论与计算神经科学、心理学和统计学保持广泛兴趣。
 
 在研究之外，我喜欢<a href="/assets/img/tavern-in-cavern.png" target="_blank" rel="noopener">徒步</a>和<a href="/assets/img/bbq.png" target="_blank" rel="noopener">室外烧烤</a>。我也是<a href="/assets/img/yotei.png" target="_blank" rel="noopener">主机游戏</a>与<a href="/assets/img/football.png" target="_blank" rel="noopener">体育</a>爱好者。
 
@@ -33,7 +33,7 @@ social: false # includes social icons at the bottom of the page
   该课程为高年级理论与计算神经科学课程。我负责准备完整作业与考试解答，主讲四次复习课，并组织多场答疑。
 - 2023.08 – 2023.12，NEURO 365L Neurobiology Lab 助教（授课教师：<a href="https://golding9.wixsite.com/website">Nace Golding</a>教授）。
   <br/>
-  该课程为高年级电生理实验课程。我负责准备课堂解题方案、进行实验前设备排查、协助学生完成膜片钳记录与药理学操作，并组织实验后的答疑讨论。
+  该课程为高年级电生理实验课程。我负责准备课堂解题方案、进行实验前设备排查、协助学生完成膜片钳记录和研究药物作用的实验，并组织实验后的答疑讨论。
 
 
 <!--more-->
