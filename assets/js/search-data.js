@@ -59,19 +59,19 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-drift-diffusion-dynamics-of-hippocampal-replay-was-selected-as-the-featured-cover-of-plos-computational-biology",
           title: 'Our paper “Drift-diffusion dynamics of hippocampal replay” was selected as the featured cover...',
           description: "",
-          section: "News",},{id: "projects-single-trial-decision-variable-dynamics-in-frontal-eye-field",
-          title: 'Single-Trial Decision Variable Dynamics in Frontal Eye Field',
-          description: "Testing ramping vs stepping hypotheses with HMMs and latent manifolds in macaque FEF",
+          section: "News",},{id: "projects-neural-population-dynamics-during-visual-decisions",
+          title: 'Neural Population Dynamics During Visual Decisions',
+          description: "Studying gradual and step-like changes in macaque frontal eye field activity during visual decisions",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en/fef_dv/";
-            },},{id: "projects-interpretable-switching-state-space-models-for-hippocampal-replay",
-          title: 'Interpretable Switching State-Space Models for Hippocampal Replay',
-          description: "Characterizing spatiotemporal structure of sharp-wave ripple replay with drift–diffusion dynamics",
+            },},{id: "projects-statistical-models-of-hippocampal-replay",
+          title: 'Statistical Models of Hippocampal Replay',
+          description: "Characterizing how replayed spatial trajectories change within hippocampal sharp-wave ripple events",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en/hippocampal_replay/";
-            },},{id: "projects-poisson-identifiable-vae-for-neural-manifold-geometry",
-          title: 'Poisson Identifiable VAE for Neural Manifold Geometry',
-          description: "Robust, identifiable latent-variable modeling to quantify geometry and topology of neural representations",
+            },},{id: "projects-statistical-models-of-neural-population-geometry",
+          title: 'Statistical Models of Neural Population Geometry',
+          description: "Using identifiable statistical models to study the geometry and topology of neural representations",
           section: "Projects",handler: () => {
               window.location.href = "/projects/en/manifold/";
             },},{

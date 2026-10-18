@@ -59,19 +59,19 @@ ninja.data = [{
           section: "新闻",},{id: "news-我们的论文-drift-diffusion-dynamics-of-hippocampal-replay-入选-plos-computational-biology-2026-年-9-月刊封面",
           title: '我们的论文 Drift-diffusion dynamics of hippocampal replay 入选 PLOS Computational Biology 2026 年 9...',
           description: "",
-          section: "新闻",},{id: "projects-single-trial-decision-variable-dynamics-in-frontal-eye-field",
-          title: 'Single-Trial Decision Variable Dynamics in Frontal Eye Field',
-          description: "Testing ramping vs stepping hypotheses with HMMs and latent manifolds in macaque FEF",
+          section: "新闻",},{id: "projects-视觉决策中的神经群体动力学",
+          title: '视觉决策中的神经群体动力学',
+          description: "研究猕猴额叶眼区在视觉决策过程中的渐进式与阶跃式活动变化",
           section: "项目",handler: () => {
               window.location.href = "/zh/projects/zh/fef_dv/";
-            },},{id: "projects-interpretable-switching-state-space-models-for-hippocampal-replay",
-          title: 'Interpretable Switching State-Space Models for Hippocampal Replay',
-          description: "Characterizing spatiotemporal structure of sharp-wave ripple replay with drift–diffusion dynamics",
+            },},{id: "projects-海马重放的统计模型",
+          title: '海马重放的统计模型',
+          description: "刻画海马尖波涟漪事件中重放的空间轨迹及其随时间的变化",
           section: "项目",handler: () => {
               window.location.href = "/zh/projects/zh/hippocampal_replay/";
-            },},{id: "projects-poisson-identifiable-vae-for-neural-manifold-geometry",
-          title: 'Poisson Identifiable VAE for Neural Manifold Geometry',
-          description: "Robust, identifiable latent-variable modeling to quantify geometry and topology of neural representations",
+            },},{id: "projects-神经群体活动几何结构的统计模型",
+          title: '神经群体活动几何结构的统计模型',
+          description: "运用可辨识的统计模型研究神经表征的几何与拓扑结构",
           section: "项目",handler: () => {
               window.location.href = "/zh/projects/zh/manifold/";
             },},{
